@@ -1,9 +1,8 @@
 import Link from "next/link"
-import Button from "./../components/Button/Button"
-import { getAllDogs2 } from "./actions/test"
+import { getAllDogs } from "../actions/getAllDogs"
 
-export default async function Home() {
-    const dogs = await getAllDogs2()
+export default async function Dogs() {
+    const dogs = await getAllDogs()
     return (
       <div>
         <ul>
@@ -16,7 +15,6 @@ export default async function Home() {
             ))
             }
         </ul>
-        <Button/>
       </div>
     )
 }
