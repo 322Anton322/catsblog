@@ -7,8 +7,10 @@ export default async function Cats() {
     return (
         <div>
         <ul>
+        <Link  href={`/dogvscat/map`}>Link</Link>
+        <Link  href={`/dogvscat/login`}>Login</Link>
             {cats.data.map((cat) => (
-                <Link  href={`/staticCats/${cat.id}`}>
+                <Link  href={`/dogvscats/map`}>
                 <h2>
                     {cat.attributes.name}
                 </h2>
