@@ -5,6 +5,7 @@ export default async function DogsVsCats() {
       <div>
         <div>
         <Link href={`/dogvscat/noDogs`}>Dogs</Link>
+        <Link href={`/dogvscat/login`}>login</Link>
         </div>
         <div>
         Cats vs Dogs
